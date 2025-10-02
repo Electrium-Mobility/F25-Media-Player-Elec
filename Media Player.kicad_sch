@@ -852,6 +852,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(wire
+		(pts
+			(xy 168.91 71.12) (xy 170.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85031baa-4076-416f-b817-50fd906f510d")
+	)
+	(wire
+		(pts
+			(xy 168.91 60.96) (xy 168.91 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a87c431f-84c8-4d18-88c0-5607164e9763")
+	)
+	(wire
+		(pts
+			(xy 154.94 60.96) (xy 154.94 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf417129-4e23-4fec-8f52-8c233600823d")
+	)
+	(wire
+		(pts
+			(xy 179.07 60.96) (xy 168.91 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4a58fc5-2c52-4e14-8b90-34c647bd5e7c")
+	)
 	(symbol
 		(lib_id "RF_Module:ESP32-S3-WROOM-1")
 		(at 139.7 74.93 0)
