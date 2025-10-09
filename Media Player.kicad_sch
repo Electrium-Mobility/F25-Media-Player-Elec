@@ -12,8 +12,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 22.225 0)
+			(property "Reference" "J3"
+				(at 0 22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -21,7 +21,7 @@
 				)
 			)
 			(property "Value" "USB_C_Receptacle_USB2.0_14P"
-				(at 0 19.685 0)
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -533,7 +533,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 15.24 10.16 180)
 					(length 5.08)
 					(name "CC1"
@@ -551,7 +551,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 15.24 7.62 180)
 					(length 5.08)
 					(name "CC2"
@@ -3716,6 +3716,12 @@
 		(uuid "0232bf3e-d1d0-4835-903f-40ee7161b613")
 	)
 	(junction
+		(at 102.87 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29b89c73-df58-41fb-b5f1-2104ddf621e9")
+	)
+	(junction
 		(at 92.71 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3758,12 +3764,6 @@
 		(uuid "5ba3da6c-e1a1-4bc8-9d10-4c743f6ff8b1")
 	)
 	(junction
-		(at 24.13 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "61c67034-d2bd-424a-929b-2967a2e6863a")
-	)
-	(junction
 		(at 53.34 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3782,6 +3782,12 @@
 		(uuid "76ad3d46-7c22-4076-b8c7-75477757cf37")
 	)
 	(junction
+		(at 250.19 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78a534af-7c51-40e1-a4bc-c8662815cb68")
+	)
+	(junction
 		(at 48.26 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3798,12 +3804,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e2f81fb-89ec-473e-9f91-01393c9bdf9f")
-	)
-	(junction
-		(at 157.48 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "964b6d9a-d10a-4e60-8ec5-14f9ad168054")
 	)
 	(junction
 		(at 85.09 60.96)
@@ -3866,6 +3866,10 @@
 		(uuid "fe25c660-96d5-4705-b7b0-2cf3a1267ab6")
 	)
 	(no_connect
+		(at 157.48 48.26)
+		(uuid "18fcb3c8-6d19-4099-a2c0-0399ae05aa12")
+	)
+	(no_connect
 		(at 157.48 68.58)
 		(uuid "3de3873c-38d5-40bb-a61c-c52952a85305")
 	)
@@ -3878,8 +3882,20 @@
 		(uuid "44ccc1c8-5938-4ad5-a445-1c94795113e5")
 	)
 	(no_connect
+		(at 157.48 50.8)
+		(uuid "54715db3-5d61-43db-af55-be871054e27b")
+	)
+	(no_connect
+		(at 157.48 33.02)
+		(uuid "60d69473-8947-4141-a8f9-54939556b1a5")
+	)
+	(no_connect
 		(at 127 43.18)
 		(uuid "af0985f6-7535-468f-b200-322faa72fedc")
+	)
+	(no_connect
+		(at 157.48 53.34)
+		(uuid "b2216b89-726f-4291-8aa4-0adf94181da4")
 	)
 	(no_connect
 		(at 157.48 71.12)
@@ -4124,16 +4140,6 @@
 			(type default)
 		)
 		(uuid "152d0868-4025-487b-9a21-0419a0cbf4ac")
-	)
-	(wire
-		(pts
-			(xy 156.21 30.48) (xy 157.48 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "164ebfc5-4ce6-4c84-9852-30a73509b0e6")
 	)
 	(wire
 		(pts
@@ -6967,6 +6973,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 250.19 36.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fb19c97-53db-4889-9a36-1f14428ca687")
+		(property "Reference" "#FLG06"
+			(at 248.285 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 246.38 36.8299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 250.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dff77e13-4a5a-418d-969a-c3d6628e22a5")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 78.74 152.4 0)
 		(unit 1)
@@ -7577,72 +7650,6 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 85.09 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3610c124-8c76-4e95-b3a5-58968f280f54")
-		(property "Reference" "#PWR023"
-			(at 85.09 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 85.09 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 85.09 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d25514ba-df6c-464f-9cdc-2f34d519aa19")
-		)
-		(instances
-			(project "Media Player"
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8310,6 +8317,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 243.84 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68dd360e-c32f-488a-9225-2060d554a285")
+		(property "Reference" "#PWR011"
+			(at 243.84 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 243.84 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 243.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "750d21fc-b634-464e-b925-692298b5880b")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 201.93 27.94 180)
 		(unit 1)
@@ -8841,6 +8914,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 250.19 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8445b536-f429-44ed-9fc7-7fdd9653f6d4")
+		(property "Reference" "#PWR02"
+			(at 250.19 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 250.19 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 250.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "632a1c69-4bd4-4413-b5c7-96e02eff89f4")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 243.84 148.59 0)
 		(unit 1)
@@ -8974,72 +9113,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 24.13 147.32 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8729cdf4-b4d3-4213-a3bb-2c7e124be991")
-		(property "Reference" "#FLG03"
-			(at 24.13 149.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 24.13 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 24.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc3852fd-6b07-444d-b4fd-a25c4458c9a2")
-		)
-		(instances
-			(project "Media Player"
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 78.74 184.15 0)
 		(unit 1)
@@ -9103,72 +9176,6 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 204.47 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b9ad40d-23be-4102-b714-ed805db6af76")
-		(property "Reference" "#PWR017"
-			(at 204.47 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 204.47 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 204.47 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e05bbb15-8ef8-4184-bdb6-df36ce987fb7")
-		)
-		(instances
-			(project "Media Player"
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9747,6 +9754,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 204.47 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afaaf459-c054-4daa-b2fc-a7fa1147bca5")
+		(property "Reference" "#PWR013"
+			(at 204.47 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 204.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44902c23-4d11-4385-9e80-a01a5ef99e07")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 50.8 184.15 0)
 		(unit 1)
@@ -10249,7 +10322,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ce6134f3-52c5-4795-8dbf-f60e453abe30")
 		(property "Reference" "#PWR09"
 			(at 78.74 113.03 0)
@@ -10260,12 +10332,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 78.74 104.14 0)
+		(property "Value" "USB_V"
+			(at 77.216 104.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -10373,6 +10446,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 102.87 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d37ab27c-3360-4d1e-889f-8537e76bba8f")
+		(property "Reference" "#FLG05"
+			(at 100.965 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 99.06 26.6699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a1cc39c-1317-4e34-a734-bbf4b6bda465")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 45.72 184.15 90)
 		(unit 1)
@@ -10435,72 +10575,6 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 243.84 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc37a021-d6ea-4c1e-b024-81d536d2289b")
-		(property "Reference" "#PWR011"
-			(at 243.84 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 243.84 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 243.84 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86d9811d-cf1f-44ed-84a6-b06ba06e7713")
-		)
-		(instances
-			(project "Media Player"
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -10638,72 +10712,6 @@
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 250.19 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e39351e0-aa14-4271-92a3-5c0690a9c876")
-		(property "Reference" "#PWR02"
-			(at 250.19 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 250.19 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 250.19 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.19 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 250.19 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "726eaf8a-32a4-4647-bf70-5a3e7d2ceeef")
-		)
-		(instances
-			(project ""
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -10979,6 +10987,72 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 85.09 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f34bbef3-29f1-4d67-8e51-2277818e3750")
+		(property "Reference" "#PWR012"
+			(at 85.09 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 85.09 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 85.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb03ca4d-6613-45cd-b133-3368fe66e351")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
