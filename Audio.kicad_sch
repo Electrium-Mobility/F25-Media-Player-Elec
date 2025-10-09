@@ -3592,7 +3592,7 @@
 		)
 		(uuid "1aa73258-dd6e-4671-a73d-93901bc0feef")
 	)
-	(hierarchical_label "A_BLCK"
+	(hierarchical_label "A_BCLK"
 		(shape input)
 		(at 99.06 71.12 180)
 		(effects
@@ -4036,7 +4036,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 40.64 75.946 0)
 			(effects
 				(font
@@ -5039,7 +5039,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 34.29 75.946 0)
 			(effects
 				(font
@@ -5790,7 +5790,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 27.94 75.946 0)
 			(effects
 				(font
