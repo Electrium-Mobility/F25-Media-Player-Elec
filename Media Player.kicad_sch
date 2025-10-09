@@ -3507,6 +3507,26 @@
 		)
 		(uuid "4aa02d82-be8d-4548-a693-5b83bfd34a4d")
 	)
+	(text "10/9/2025"
+		(exclude_from_sim no)
+		(at 212.598 193.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5292b5e2-41cf-4668-84db-757292fe467e")
+	)
+	(text "Root Page"
+		(exclude_from_sim no)
+		(at 192.532 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5396cfc1-92bc-4c4b-bc67-1ceaf077385f")
+	)
 	(text "Pull up or pull down res\n"
 		(exclude_from_sim no)
 		(at 268.478 137.922 0)
@@ -3613,6 +3633,16 @@
 		)
 		(uuid "ba738774-1150-4848-acca-4f33a625be18")
 	)
+	(text "Main Contributors: Robin"
+		(exclude_from_sim no)
+		(at 190.246 179.578 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bff4c8f8-c89c-4ef1-bff1-45684df6290e")
+	)
 	(text "PHILS LAB"
 		(exclude_from_sim no)
 		(at 38.608 66.802 0)
@@ -3624,6 +3654,16 @@
 			)
 		)
 		(uuid "c5a3a9af-6bb8-41a5-84cf-6e904e47acec")
+	)
+	(text "Draft 1"
+		(exclude_from_sim no)
+		(at 273.05 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c8df0335-7548-433b-aa53-00dd00cbd197")
 	)
 	(text "USB\n"
 		(exclude_from_sim no)
@@ -7164,7 +7204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MEM2075-00-140-01-A"
+		(property "Datasheet" "https://gct.co/connector/mem2075"
 			(at 261.62 113.538 0)
 			(effects
 				(font
@@ -9877,7 +9917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.waveshare.com/wiki/2.4inch_LCD_Module"
 			(at 271.78 46.99 0)
 			(effects
 				(font

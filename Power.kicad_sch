@@ -2239,6 +2239,16 @@
 		)
 		(uuid "10d76b35-ecaa-4d0b-b70d-ef0791739298")
 	)
+	(text "Power\n Page"
+		(exclude_from_sim no)
+		(at 192.532 189.484 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1cd5fb1d-7939-4f56-a9cc-07872ef3d91a")
+	)
 	(text "Charging"
 		(exclude_from_sim no)
 		(at 34.798 92.456 0)
@@ -2250,6 +2260,16 @@
 			)
 		)
 		(uuid "50b61667-1ed5-4445-960f-c114c75b9b36")
+	)
+	(text "Main Contributors: Tarek, Thomas"
+		(exclude_from_sim no)
+		(at 194.31 179.324 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5530c682-f289-4eb3-bceb-a3575e4295d9")
 	)
 	(text "Do i need to pull up res"
 		(exclude_from_sim no)
@@ -2282,6 +2302,16 @@
 			)
 		)
 		(uuid "6f54cc6d-0e97-487c-8096-ad4172c3cdb9")
+	)
+	(text "10/9/2025"
+		(exclude_from_sim no)
+		(at 212.598 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6fa9c121-1a3d-47c9-a62a-f8ae2a25d42a")
 	)
 	(text "Decoupling here? Does this make sense?"
 		(exclude_from_sim no)
@@ -2326,6 +2356,16 @@
 			)
 		)
 		(uuid "cbfa2cfd-cd26-45db-b7cc-155d42d5704e")
+	)
+	(text "Draft 1"
+		(exclude_from_sim no)
+		(at 273.05 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cfc27417-190e-4cf0-9a08-52832bf34d2d")
 	)
 	(text "Decoupling?"
 		(exclude_from_sim no)
@@ -3118,7 +3158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps631000.pdf"
 			(at 177.8 130.81 0)
 			(effects
 				(font

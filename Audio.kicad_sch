@@ -2060,6 +2060,16 @@
 		)
 		(uuid "02320429-47a2-41ce-bd71-45a1cdc3b98d")
 	)
+	(text "Audio Page"
+		(exclude_from_sim no)
+		(at 191.77 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "29cf0505-82bd-4f9d-bd02-ce71af8ffcf3")
+	)
 	(text "Find a CODEC/DAC IC OR LOOK FOR DIFFERENT CHIP"
 		(exclude_from_sim no)
 		(at 247.65 89.916 0)
@@ -2081,6 +2091,16 @@
 			)
 		)
 		(uuid "807654c5-a7ee-4c28-ba49-f64a6579890b")
+	)
+	(text "Main Contributors: Robin"
+		(exclude_from_sim no)
+		(at 189.484 179.578 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ab636f92-5bfc-40a5-a7ff-680dedad5c8f")
 	)
 	(text "Unused"
 		(exclude_from_sim no)
@@ -2104,6 +2124,16 @@
 		)
 		(uuid "beb4a77b-c723-452c-bc16-1b03abcc2d2c")
 	)
+	(text "Draft 1"
+		(exclude_from_sim no)
+		(at 272.288 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ca0089c1-e3b2-4498-9ada-cc16413b18ab")
+	)
 	(text "Place near VDD"
 		(exclude_from_sim no)
 		(at 60.452 113.03 0)
@@ -2123,6 +2153,16 @@
 			)
 		)
 		(uuid "f242430f-ff55-4770-81f2-3887ccafc009")
+	)
+	(text "10/9/2025"
+		(exclude_from_sim no)
+		(at 211.836 193.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f5cf9129-7462-49b5-9d19-dc0962f4ad1a")
 	)
 	(text "\"It is good practice for an application to configure the I2C\nregisters before taking the MAX9850 out of shutdown.\nThis may include setting initial volume levels, DAC\nmode of operation, stereo or mono operation, and audio\ninterface settings. Powering on the MAX9850 with all the\nregisters set ensures that the audio output will not be\ninterrupted.\""
 		(exclude_from_sim no)
