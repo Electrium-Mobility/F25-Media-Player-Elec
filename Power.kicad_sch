@@ -4057,7 +4057,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 73.66 34.29 0)
 			(effects
 				(font
@@ -4420,7 +4420,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 60.96 107.95 0)
 			(effects
 				(font
@@ -4702,7 +4702,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_NV_B02P-NV_1x02_P5.00mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
 			(at 50.8 51.816 90)
 			(effects
 				(font
@@ -4902,7 +4902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 134.62 130.81 0)
 			(effects
 				(font
@@ -4969,7 +4969,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 76.2 58.42 0)
 			(effects
 				(font
@@ -5745,7 +5745,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 29.5148 120.65 0)
 			(effects
 				(font
@@ -6009,7 +6009,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 92.71 130.81 0)
 			(effects
 				(font
@@ -6355,7 +6355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
 			(at 83.82 45.72 0)
 			(effects
 				(font
@@ -6490,7 +6490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 222.25 130.81 0)
 			(effects
 				(font
