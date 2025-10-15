@@ -3731,17 +3731,6 @@
 		)
 		(uuid "8c7c5cd8-9954-450e-8a29-f99cbe007bcd")
 	)
-	(text "add component tolerances\nnot sure what the comparison to decaps and system on chip/state of charge is, but do keep the decaps close to the power pins of your ics lol\njustify your screen/sdcr decap value, also you dont need them (sorry damir)\nspec tvs clamp voltage\na pull up or pull down is dependent on whether the pin is active high or active low\nno dont decouple your battery. a decoupling capacitor or rather its purpose is to act as a localized \"reservoir\" for transient loads to prevent voltage dips, unless the battery is looking to source current from the esp32 lmao\nst is an output. so dont tie it to 5v or 3.3v. high means its in1 = usb, low means in2 = bat. currently, in the case when usb isnt connected, the ic will try to pull low while being pulled up by vbat. flip it, or have firmware hate you lol\nneed decaps on the vbat side of the charge ic\n+ anythign i said before"
-		(exclude_from_sim no)
-		(at 42.926 -9.144 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9da6dd1f-fde1-4349-a9b1-f2f8996d4439")
-	)
 	(text "Do you need both an USB OTG and UART port?\nhttps://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/usb-otg-console.html"
 		(exclude_from_sim no)
 		(at 51.308 97.536 0)
