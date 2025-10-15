@@ -1539,6 +1539,144 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:SMF33A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMF33A"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMF"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/doc?85881"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 33Vrwm, SMF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMF*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMF33A_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMF33A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MEM2075:MEM2075-00-140-01-A"
 			(pin_names
 				(offset 0.254)
@@ -1546,20 +1684,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 1.778 15.494 0)
+			(property "Reference" "J2"
+				(at 1.27 21.336 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "MEM2075-00-140-01-A"
-				(at 15.748 13.208 0)
+				(at 1.27 18.796 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "MEM2075-00-140-01-A_GCT"
@@ -1572,7 +1712,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "MEM2075-00-140-01-A"
+			(property "Datasheet" "https://gct.co/connector/mem2075"
 				(at 17.78 17.272 0)
 				(effects
 					(font
@@ -1619,7 +1759,7 @@
 			)
 			(symbol "MEM2075-00-140-01-A_0_1"
 				(pin power_in line
-					(at 0 19.05 270)
+					(at 0 24.13 270)
 					(length 7.62)
 					(name "VDD"
 						(effects
@@ -1637,7 +1777,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 2.54 180)
+					(at 15.24 5.08 180)
 					(length 7.62)
 					(name "DAT2"
 						(effects
@@ -1655,7 +1795,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 -1.27 180)
+					(at 15.24 0 180)
 					(length 7.62)
 					(name "DAT1"
 						(effects
@@ -1693,7 +1833,7 @@
 			)
 			(symbol "MEM2075-00-140-01-A_1_1"
 				(rectangle
-					(start -7.62 11.43)
+					(start -7.62 16.51)
 					(end 7.62 -10.16)
 					(stroke
 						(width 0)
@@ -1758,7 +1898,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 6.35 180)
+					(at 15.24 10.16 180)
 					(length 7.62)
 					(name "CD/DAT3"
 						(effects
@@ -3387,7 +3527,7 @@
 	)
 	(text "Keep decoupling capacitors as close to SoC as possible\n"
 		(exclude_from_sim no)
-		(at 164.846 90.17 0)
+		(at 109.728 89.916 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3407,15 +3547,15 @@
 		)
 		(uuid "1791ec0b-7838-4779-a757-de99ecd27066")
 	)
-	(text "Decoupling capacitor value is not justified, random value\n"
+	(text "Capacitors for removing debounce"
 		(exclude_from_sim no)
-		(at 228.854 160.02 0)
+		(at 47.498 168.656 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.635 0.635)
 			)
 		)
-		(uuid "1f74a0a9-6eec-4c20-9d6b-ec2b1cd38d56")
+		(uuid "1f5c097a-e99c-445e-8467-5880dabc66e7")
 	)
 	(text "Look at and reference dev/evaluation boards from ESP32S3"
 		(exclude_from_sim no)
@@ -3452,9 +3592,9 @@
 		)
 		(uuid "23322d9e-837b-4090-87d1-8a07461a1ae8")
 	)
-	(text "GPIO 0 is weak pull up"
+	(text "GPIO 0 is weak pull up, 45 and 46 are pull down, meaning\nwhen you can enable USB joint download, UART or OTG\n"
 		(exclude_from_sim no)
-		(at 199.898 90.17 0)
+		(at 211.328 89.662 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -3474,6 +3614,16 @@
 		)
 		(uuid "2dec86e7-e631-4fc9-bfce-024f41702d7b")
 	)
+	(text "Using stereotypical decap value.\nKeep as close to connector as possible"
+		(exclude_from_sim no)
+		(at 211.582 146.812 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "3947ef92-e763-4897-bcbb-10253e03c9fc")
+	)
 	(text "MicroSD Card Reader\n"
 		(exclude_from_sim no)
 		(at 217.932 97.282 0)
@@ -3486,12 +3636,12 @@
 		)
 		(uuid "3ee2e2c9-c67e-4860-a9cf-9dcd3bc5308a")
 	)
-	(text "Double check your LCD attachments. You sure Backlight can be GPIO without resistors?"
+	(text "Backlight should be 0-3.3v"
 		(exclude_from_sim no)
-		(at 268.732 76.454 0)
+		(at 261.112 59.182 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.635 0.635)
 			)
 		)
 		(uuid "3f41824b-e0cb-4fd6-8ba2-4c1feed70d66")
@@ -3527,12 +3677,12 @@
 		)
 		(uuid "5396cfc1-92bc-4c4b-bc67-1ceaf077385f")
 	)
-	(text "Pull up or pull down res\n"
+	(text "Zero resistors because I'm unsure if\nwe'll actually use all datalines for audio"
 		(exclude_from_sim no)
-		(at 268.478 137.922 0)
+		(at 264.668 139.446 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.635 0.635)
 			)
 		)
 		(uuid "6690a437-fa18-4dbb-8e63-d6d6dae6b73d")
@@ -3581,6 +3731,27 @@
 		)
 		(uuid "8c7c5cd8-9954-450e-8a29-f99cbe007bcd")
 	)
+	(text "add component tolerances\nnot sure what the comparison to decaps and system on chip/state of charge is, but do keep the decaps close to the power pins of your ics lol\njustify your screen/sdcr decap value, also you dont need them (sorry damir)\nspec tvs clamp voltage\na pull up or pull down is dependent on whether the pin is active high or active low\nno dont decouple your battery. a decoupling capacitor or rather its purpose is to act as a localized \"reservoir\" for transient loads to prevent voltage dips, unless the battery is looking to source current from the esp32 lmao\nst is an output. so dont tie it to 5v or 3.3v. high means its in1 = usb, low means in2 = bat. currently, in the case when usb isnt connected, the ic will try to pull low while being pulled up by vbat. flip it, or have firmware hate you lol\nneed decaps on the vbat side of the charge ic\n+ anythign i said before"
+		(exclude_from_sim no)
+		(at 42.926 -9.144 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9da6dd1f-fde1-4349-a9b1-f2f8996d4439")
+	)
+	(text "Do you need both an USB OTG and UART port?\nhttps://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/usb-otg-console.html"
+		(exclude_from_sim no)
+		(at 51.308 97.536 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "9ee9f95a-0855-4472-b19b-18af80adcf3f")
+	)
 	(text "PROBING POINTs"
 		(exclude_from_sim no)
 		(at 36.576 70.866 0)
@@ -3613,22 +3784,22 @@
 		)
 		(uuid "b8e53d15-18f3-47b6-815b-cef2622e9b5e")
 	)
-	(text "Use two capacitors, small and big"
+	(text "Keep smaller decap close to IC"
 		(exclude_from_sim no)
-		(at 98.044 88.392 0)
+		(at 101.346 44.958 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.635 0.635)
 			)
 		)
 		(uuid "ba48454f-16d8-49ff-8695-8081496d053a")
 	)
-	(text "Decoupling capacitor value is not justified, random value\n"
+	(text "Using stereotypical decap value.\nKeep as close to connector as possible"
 		(exclude_from_sim no)
-		(at 254.762 27.432 0)
+		(at 235.204 73.406 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.635 0.635)
 			)
 		)
 		(uuid "ba738774-1150-4848-acca-4f33a625be18")
@@ -3665,6 +3836,16 @@
 		)
 		(uuid "c8df0335-7548-433b-aa53-00dd00cbd197")
 	)
+	(text "VBUS TVS diode can handle 4A."
+		(exclude_from_sim no)
+		(at 71.882 136.398 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "cebcec32-4172-4139-a38f-4baa7a6c9c4a")
+	)
 	(text "USB\n"
 		(exclude_from_sim no)
 		(at 20.32 96.774 0)
@@ -3676,6 +3857,16 @@
 			)
 		)
 		(uuid "cf523fea-e509-4651-8832-83c1fe8a1f49")
+	)
+	(text "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html#hardware-revision-details"
+		(exclude_from_sim no)
+		(at 229.616 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d0253fe4-9905-4a5c-82eb-2d6f1800cad9")
 	)
 	(text "J4\nSleeve, Ring, Tip --> Right, Left, Ground (not in order).\nNo switch --> only one audio source and reciever"
 		(exclude_from_sim no)
@@ -3732,6 +3923,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3449f714-916b-4f55-80d7-61090411e765")
+	)
+	(junction
+		(at 62.23 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "359936d9-de10-4c05-946f-ad84bef8ee6e")
 	)
 	(junction
 		(at 96.52 177.8)
@@ -3874,14 +4071,6 @@
 		(uuid "3de3873c-38d5-40bb-a61c-c52952a85305")
 	)
 	(no_connect
-		(at 157.48 124.46)
-		(uuid "3fdc36aa-1374-43ef-abeb-b2f1fd7d0f41")
-	)
-	(no_connect
-		(at 157.48 127)
-		(uuid "44ccc1c8-5938-4ad5-a445-1c94795113e5")
-	)
-	(no_connect
 		(at 157.48 50.8)
 		(uuid "54715db3-5d61-43db-af55-be871054e27b")
 	)
@@ -3943,6 +4132,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 143.51) (xy 62.23 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "027c6416-f01b-41fd-b3c1-c383d3d6cf18")
+	)
+	(wire
+		(pts
 			(xy 128.27 114.3) (xy 157.48 114.3)
 		)
 		(stroke
@@ -4000,6 +4199,16 @@
 			(type default)
 		)
 		(uuid "05ead090-def0-4aed-9d1c-43291875d1cc")
+	)
+	(wire
+		(pts
+			(xy 62.23 148.59) (xy 62.23 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06f410e4-558a-4a48-8740-ee64bc512e76")
 	)
 	(wire
 		(pts
@@ -4293,6 +4502,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 130.81) (xy 261.62 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fbcd142-3794-452c-9669-735d3f151963")
+	)
+	(wire
+		(pts
 			(xy 116.84 190.5) (xy 116.84 191.77)
 		)
 		(stroke
@@ -4370,6 +4589,16 @@
 			(type default)
 		)
 		(uuid "3b90de1b-a5ad-4301-9b36-dbb5917f5e49")
+	)
+	(wire
+		(pts
+			(xy 62.23 109.22) (xy 78.74 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "434e057a-6bba-425c-b838-21e9cf003683")
 	)
 	(wire
 		(pts
@@ -4463,7 +4692,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 129.54) (xy 71.12 129.54)
+			(xy 46.99 129.54) (xy 73.66 129.54)
 		)
 		(stroke
 			(width 0)
@@ -4613,7 +4842,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 124.46) (xy 266.7 124.46)
+			(xy 266.7 120.65) (xy 274.32 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4753,7 +4982,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 109.22) (xy 59.69 140.97)
+			(xy 62.23 109.22) (xy 62.23 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4863,7 +5092,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 35.56) (xy 233.68 45.72)
+			(xy 229.87 35.56) (xy 229.87 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4883,7 +5112,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 109.22) (xy 78.74 109.22)
+			(xy 59.69 109.22) (xy 62.23 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4953,6 +5182,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 120.65) (xy 261.62 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94858b2c-a7ad-4866-a80e-85b1bd0d635b")
+	)
+	(wire
+		(pts
 			(xy 73.66 179.07) (xy 73.66 177.8)
 		)
 		(stroke
@@ -5013,13 +5252,23 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 50.8) (xy 233.68 64.77)
+			(xy 229.87 50.8) (xy 229.87 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9c0bba19-eca8-4f81-b6b8-57810d6dd02c")
+	)
+	(wire
+		(pts
+			(xy 259.08 125.73) (xy 261.62 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f2de619-a533-4700-bdcf-5d1c32fb03d6")
 	)
 	(wire
 		(pts
@@ -5173,16 +5422,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 124.46) (xy 71.12 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5dbc650-c806-4549-b7a1-a85f4c6a9d53")
-	)
-	(wire
-		(pts
 			(xy 254 44.45) (xy 266.7 44.45)
 		)
 		(stroke
@@ -5240,6 +5479,16 @@
 			(type default)
 		)
 		(uuid "bf62e9f2-60ae-4423-8dc1-8e76840f5a45")
+	)
+	(wire
+		(pts
+			(xy 259.08 135.89) (xy 261.62 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c34f6cb5-922b-4e88-948e-5416e51128b3")
 	)
 	(wire
 		(pts
@@ -5423,16 +5672,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 148.59) (xy 59.69 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddaf82a3-ef37-42e4-afd0-efa8d1009a53")
-	)
-	(wire
-		(pts
 			(xy 116.84 177.8) (xy 119.38 177.8)
 		)
 		(stroke
@@ -5513,6 +5752,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 124.46) (xy 73.66 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5869a9b-f365-44f9-abed-d2617df0f242")
+	)
+	(wire
+		(pts
 			(xy 99.06 190.5) (xy 99.06 186.69)
 		)
 		(stroke
@@ -5543,7 +5792,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 132.08) (xy 266.7 132.08)
+			(xy 266.7 130.81) (xy 274.32 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5643,7 +5892,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 128.27) (xy 266.7 128.27)
+			(xy 266.7 125.73) (xy 274.32 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5673,7 +5922,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 135.89) (xy 266.7 135.89)
+			(xy 266.7 135.89) (xy 274.32 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5722,7 +5971,7 @@
 		(uuid "fedb87c7-d425-435a-8794-6fe3939ead80")
 	)
 	(label "USB_D+"
-		(at 71.12 129.54 180)
+		(at 73.66 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5762,7 +6011,7 @@
 		(uuid "0f12d3e6-0c1f-45c1-ae64-ede65d81e2c2")
 	)
 	(label "SD_D0"
-		(at 266.7 135.89 180)
+		(at 274.32 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5922,7 +6171,7 @@
 		(uuid "3c22a2de-8c14-442e-a8bf-940305e16667")
 	)
 	(label "SD_D1"
-		(at 266.7 132.08 180)
+		(at 274.32 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5962,7 +6211,7 @@
 		(uuid "42b9d274-91f6-4f8a-b873-46ed3210be82")
 	)
 	(label "SD_D3"
-		(at 266.7 124.46 180)
+		(at 274.32 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6102,7 +6351,7 @@
 		(uuid "83b6add9-7242-40da-9d5d-708f464a13a5")
 	)
 	(label "USB_D-"
-		(at 71.12 124.46 180)
+		(at 73.66 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6162,7 +6411,7 @@
 		(uuid "9403e24e-df4e-4814-a583-0f3139d92cda")
 	)
 	(label "GPIO0"
-		(at 54.61 175.26 180)
+		(at 34.29 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6252,7 +6501,7 @@
 		(uuid "b7a409d0-57d8-4782-aa8e-e2f5250be731")
 	)
 	(label "SD_D2"
-		(at 266.7 128.27 180)
+		(at 274.32 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6332,7 +6581,7 @@
 		(uuid "e26d7d10-9a5b-4c69-9764-6d12a2694d14")
 	)
 	(label "CHIP_PU"
-		(at 34.29 175.26 180)
+		(at 54.61 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6642,8 +6891,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 264.16 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c1372e9-f883-40a9-9ccd-ea5461ca2b71")
+		(property "Reference" "R25"
+			(at 262.128 123.444 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0Ω"
+			(at 266.192 123.444 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 264.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aae60459-1e10-41be-b399-d3906977ff26")
+		)
+		(pin "2"
+			(uuid "4bb990c3-2158-464c-bf33-99b476b09eb9")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1.5KExxCA")
-		(at 59.69 144.78 90)
+		(at 62.23 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6651,7 +6967,7 @@
 		(dnp no)
 		(uuid "10379115-28d5-4bbf-ba02-89f3179b0e50")
 		(property "Reference" "D3"
-			(at 60.706 149.606 90)
+			(at 63.246 140.716 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6659,8 +6975,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "???"
-			(at 60.706 152.146 90)
+		(property "Value" "GG0402055R042P"
+			(at 63.246 143.256 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6669,7 +6985,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
-			(at 64.77 144.78 0)
+			(at 67.31 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6677,8 +6993,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
-			(at 59.69 144.78 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AVX-GiGuard.pdf"
+			(at 62.23 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6687,7 +7003,7 @@
 			)
 		)
 		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
-			(at 59.69 144.78 0)
+			(at 62.23 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7040,6 +7356,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 264.16 135.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "216594e9-aedc-4446-9457-277e6524d496")
+		(property "Reference" "R27"
+			(at 262.128 133.604 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0Ω"
+			(at 266.192 133.604 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 264.16 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5de9bca-2890-4439-a45e-1da62cf753a3")
+		)
+		(pin "2"
+			(uuid "fafb86f4-e9f3-4f40-a79b-b396a846ef27")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 78.74 152.4 0)
 		(unit 1)
@@ -7100,6 +7483,75 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 62.23 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25f07632-9450-4948-97f8-70b793fb2681")
+		(property "Reference" "R28"
+			(at 64.516 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 64.516 149.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 62.23 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "465dbb16-94ee-4b1e-97bc-e6e08f69190b")
+		)
+		(pin "1"
+			(uuid "351020e6-ba4c-42d6-ac43-b7fbb6cc6feb")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -7188,7 +7640,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 205.486 125.73 0)
 			(effects
 				(font
@@ -7250,7 +7702,7 @@
 		(fields_autoplaced yes)
 		(uuid "2db87eaf-378b-4973-8672-54b445f6d583")
 		(property "Reference" "J2"
-			(at 245.9833 114.3 0)
+			(at 245.11 109.474 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7259,7 +7711,7 @@
 			)
 		)
 		(property "Value" "MEM2075-00-140-01-A"
-			(at 245.9833 116.84 0)
+			(at 245.11 112.014 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7856,7 +8308,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 233.68 64.77 0)
+		(at 229.87 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7865,7 +8317,7 @@
 		(fields_autoplaced yes)
 		(uuid "4102d100-799e-4f68-9f17-7e7c0602bd56")
 		(property "Reference" "#PWR020"
-			(at 233.68 71.12 0)
+			(at 229.87 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7874,7 +8326,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.68 69.85 0)
+			(at 229.87 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7882,7 +8334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 64.77 0)
+			(at 229.87 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7891,7 +8343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 64.77 0)
+			(at 229.87 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7900,7 +8352,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 64.77 0)
+			(at 229.87 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7995,20 +8447,19 @@
 		(dnp no)
 		(uuid "46589c39-eaf8-43d3-ab69-e54870d1689b")
 		(property "Reference" "SW1"
-			(at 21.59 182.626 90)
+			(at 21.844 180.594 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 23.368 176.784 0)
+		(property "Value" "BOOT"
+			(at 21.336 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -8583,6 +9034,73 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 264.16 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75d57aa3-db48-43da-81f4-b49f10fbc251")
+		(property "Reference" "R24"
+			(at 262.128 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0Ω"
+			(at 266.192 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 264.16 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "567b6ce9-a1d9-45d3-abf3-6a7e238048dd")
+		)
+		(pin "2"
+			(uuid "0e8ee32c-e32b-44e9-a676-bdc9e88d9505")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 96.52 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8783,17 +9301,85 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 233.68 35.56 0)
+		(lib_id "Diode:SMF33A")
+		(at 46.99 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "7f498c31-7f6c-4b12-8353-ce1e038431d5")
+		(property "Reference" "D1"
+			(at 43.18 149.606 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMF3.3"
+			(at 39.116 151.638 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMF"
+			(at 41.91 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smf3?assetguid=2e80cd26-b0c3-442f-9d77-27a283ccff4f"
+			(at 46.99 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 33Vrwm, SMF"
+			(at 46.99 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9029ef02-f575-4f3c-ad7d-95334b09dbea")
+		)
+		(pin "1"
+			(uuid "3a0138f9-9b11-4a4b-b727-f737acac2ec6")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 229.87 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "81ada769-2212-44ec-aadd-bcc88d3d03db")
 		(property "Reference" "#PWR019"
-			(at 233.68 39.37 0)
+			(at 229.87 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,7 +9388,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 233.68 30.48 0)
+			(at 229.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8810,7 +9396,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 35.56 0)
+			(at 229.87 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8819,7 +9405,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 35.56 0)
+			(at 229.87 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8828,7 +9414,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 233.68 35.56 0)
+			(at 229.87 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9889,6 +10475,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 264.16 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b88f563f-57c4-4aeb-a466-3f7fea6d0af7")
+		(property "Reference" "R26"
+			(at 262.128 128.524 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0Ω"
+			(at 266.192 128.524 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 264.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b8b22a9-da97-4269-8113-506a1f5d7aaa")
+		)
+		(pin "2"
+			(uuid "e07449b3-e6fe-499a-acf8-42e64878115f")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 96.52 191.77 0)
 		(unit 1)
@@ -10043,7 +10696,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 233.68 48.26 0)
+		(at 229.87 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10051,7 +10704,7 @@
 		(dnp no)
 		(uuid "bf3fb477-f2a6-43f4-b3db-405e5d91206e")
 		(property "Reference" "C11"
-			(at 234.696 50.8 0)
+			(at 230.886 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10059,8 +10712,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 234.696 53.34 0)
+		(property "Value" "0.1uF"
+			(at 230.886 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10069,7 +10722,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 48.26 0)
+			(at 229.87 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10078,7 +10731,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 48.26 0)
+			(at 229.87 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10087,7 +10740,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 233.68 48.26 0)
+			(at 229.87 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10246,8 +10899,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1.5KExxCA")
-		(at 53.34 144.78 90)
+		(lib_id "Diode:SMF33A")
+		(at 53.34 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10255,34 +10908,25 @@
 		(dnp no)
 		(uuid "cc55c530-5b92-48d4-a771-f8cd2b6db030")
 		(property "Reference" "D2"
-			(at 54.864 149.352 90)
+			(at 54.102 149.098 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "???"
-			(at 54.864 151.892 90)
+		(property "Value" "SMF3.3"
+			(at 54.102 151.638 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
-			(at 58.42 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
-			(at 53.34 144.78 0)
+		(property "Footprint" "Diode_SMD:D_SMF"
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10290,7 +10934,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smf3?assetguid=2e80cd26-b0c3-442f-9d77-27a283ccff4f"
+			(at 53.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 33Vrwm, SMF"
 			(at 53.34 144.78 0)
 			(effects
 				(font
@@ -10332,7 +10985,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "USB_V"
+		(property "Value" "VBUS"
 			(at 77.216 104.902 0)
 			(effects
 				(font
@@ -10522,20 +11175,19 @@
 		(dnp no)
 		(uuid "dafa8ae2-a200-4bb2-bd61-de55740bf936")
 		(property "Reference" "SW2"
-			(at 41.91 182.626 90)
+			(at 41.656 180.086 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 43.688 176.784 0)
+		(property "Value" "RESET"
+			(at 40.894 182.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -10643,75 +11295,6 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
 					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1.5KExxCA")
-		(at 46.99 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e23937eb-dfb3-473b-a6c3-150682885cff")
-		(property "Reference" "D1"
-			(at 48.006 149.352 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "???"
-			(at 48.006 151.892 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
-			(at 52.07 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
-			(at 46.99 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
-			(at 46.99 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c30fe79c-20f7-4378-8287-625b87a0a862")
-		)
-		(pin "1"
-			(uuid "461fc131-d1f0-4163-8f2e-2cf485296c2c")
-		)
-		(instances
-			(project ""
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -11335,7 +11918,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 152.4 0)
+		(at 62.23 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11344,7 +11927,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd86d18a-cc0d-4b10-89e4-639e44c94e30")
 		(property "Reference" "#PWR03"
-			(at 59.69 158.75 0)
+			(at 62.23 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11353,7 +11936,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 157.48 0)
+			(at 62.23 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11361,7 +11944,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 152.4 0)
+			(at 62.23 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11370,7 +11953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 152.4 0)
+			(at 62.23 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11379,7 +11962,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 152.4 0)
+			(at 62.23 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11583,26 +12166,6 @@
 		(pin "A_GPIO" input
 			(at 157.48 139.7 180)
 			(uuid "06972605-8e18-4b6a-a018-580a6fcf7439")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "A_INL" input
-			(at 157.48 124.46 180)
-			(uuid "047eb948-4e20-4626-910e-1226c640632d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "A_INR" input
-			(at 157.48 127 180)
-			(uuid "8efabd73-176e-4c94-83f6-65cc216923b8")
 			(effects
 				(font
 					(size 1.27 1.27)
