@@ -1606,6 +1606,28 @@
 		)
 		(uuid "29cf0505-82bd-4f9d-bd02-ce71af8ffcf3")
 	)
+	(text "Is the footprint for this guy event accessible? Who are\nwe buyging from again?"
+		(exclude_from_sim no)
+		(at 185.42 88.392 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 23 0 1)
+			)
+		)
+		(uuid "5c66e775-af09-4caa-ad4f-efc6aec112db")
+	)
+	(text "THIS IC IS A TQFN chip! Be careful"
+		(exclude_from_sim no)
+		(at 140.208 64.008 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 23 0 1)
+			)
+		)
+		(uuid "5ed051b7-6153-4c3c-92a6-936617782c70")
+	)
 	(text "Audio Jack"
 		(exclude_from_sim no)
 		(at 37.338 28.702 0)
@@ -1731,34 +1753,16 @@
 		(uuid "6877c954-4555-41d6-a2c6-f18eda3a2660")
 	)
 	(junction
-		(at 99.06 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b9942f4-7220-46e1-9245-10af68d5898a")
-	)
-	(junction
 		(at 45.72 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fc7f8ea-e4c0-4890-9478-f3edf0fabb1e")
 	)
 	(junction
-		(at 99.06 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b050dbd8-f484-4ee7-bc4c-0922537592af")
-	)
-	(junction
 		(at 99.06 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b28c6a27-f6c5-4762-8c6d-7baedcdf7360")
-	)
-	(junction
-		(at 99.06 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4540ead-7618-4a30-bccf-8c67611e6d5f")
 	)
 	(junction
 		(at 115.57 111.76)
@@ -1788,7 +1792,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 91.44) (xy 102.87 91.44)
+			(xy 87.63 91.44) (xy 102.87 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1928,7 +1932,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 99.06) (xy 99.06 99.06)
+			(xy 87.63 99.06) (xy 102.87 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2068,6 +2072,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 83.82) (xy 99.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "632fbf5f-8fbd-43c4-8e1f-6ef1ce3bc2e1")
+	)
+	(wire
+		(pts
 			(xy 99.06 116.84) (xy 101.6 116.84)
 		)
 		(stroke
@@ -2118,16 +2132,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 88.9) (xy 99.06 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "763d87fd-5afd-44b9-b6d2-66d2bfbeb210")
-	)
-	(wire
-		(pts
 			(xy 101.6 111.76) (xy 101.6 116.84)
 		)
 		(stroke
@@ -2138,27 +2142,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 99.06) (xy 102.87 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77571388-588f-4103-9191-92fe0431faaf")
-	)
-	(wire
-		(pts
-			(xy 99.06 99.06) (xy 99.06 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77d657fc-3999-41a0-9d50-54aecb0a31b6")
-	)
-	(wire
-		(pts
-			(xy 99.06 88.9) (xy 102.87 88.9)
+			(xy 87.63 88.9) (xy 102.87 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2258,16 +2242,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 88.9) (xy 99.06 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "984e7590-50d3-4585-8b5e-d7fbc9b03c16")
-	)
-	(wire
-		(pts
 			(xy 118.11 111.76) (xy 118.11 119.38)
 		)
 		(stroke
@@ -2288,16 +2262,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 91.44) (xy 99.06 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a124c5bb-f8f8-4ec6-9eff-fb54f5321677")
-	)
-	(wire
-		(pts
 			(xy 118.11 50.8) (xy 118.11 58.42)
 		)
 		(stroke
@@ -2315,16 +2279,6 @@
 			(type default)
 		)
 		(uuid "a4df82f2-deea-49d1-904e-a431d568135a")
-	)
-	(wire
-		(pts
-			(xy 99.06 83.82) (xy 99.06 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6424d2f-e545-45dd-88dd-ea9a5b98eed1")
 	)
 	(wire
 		(pts
@@ -2515,16 +2469,6 @@
 			(type default)
 		)
 		(uuid "cb9c3496-fe2b-4ee2-97b5-49f268c997e8")
-	)
-	(wire
-		(pts
-			(xy 87.63 91.44) (xy 99.06 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d13db319-5626-4f00-aa81-614fe935259a")
 	)
 	(wire
 		(pts
@@ -3865,7 +3809,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Footprints:CLIFF_FC68131"
+		(property "Footprint" "Footprints:CUI_SJ-3524-SMT"
 			(at 160.02 99.06 0)
 			(effects
 				(font

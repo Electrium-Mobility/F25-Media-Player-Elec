@@ -3249,6 +3249,16 @@
 		)
 		(uuid "dc4b11d9-fc02-4712-9474-765999e95da3")
 	)
+	(text "Maybe make comparator output go to the battery mosfet?"
+		(exclude_from_sim no)
+		(at 260.096 33.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4a385e4-09e8-488e-b8be-c89c0e73f75d")
+	)
 	(text "Stat is 4v-4.7v or \nbetween 4.9-4.7v\nthere might be a typo on\ndatasheet"
 		(exclude_from_sim no)
 		(at 177.8 47.752 0)
@@ -3422,6 +3432,16 @@
 			(type default)
 		)
 		(uuid "05a331b0-729d-4596-8088-8e89cdf0f6eb")
+	)
+	(wire
+		(pts
+			(xy 133.35 110.49) (xy 133.35 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "065644f8-2359-4b2e-bfb8-12d7bab0d914")
 	)
 	(wire
 		(pts
@@ -4145,7 +4165,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 95.25) (xy 133.35 106.68)
+			(xy 133.35 95.25) (xy 133.35 105.41)
 		)
 		(stroke
 			(width 0)
@@ -4838,7 +4858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 44.45 29.21 0)
 			(effects
 				(font
@@ -5069,7 +5089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 20.6248 102.87 0)
 			(effects
 				(font
@@ -5271,7 +5291,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 86.36 109.22 0)
 			(effects
 				(font
@@ -5404,7 +5424,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 187.96 44.45 0)
 			(effects
 				(font
@@ -5481,7 +5501,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
 			(at 208.28 100.33 0)
 			(effects
 				(font
@@ -5686,7 +5706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 134.62 50.8 0)
 			(effects
 				(font
@@ -5802,7 +5822,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4b79d78a-18a5-4bd7-87e6-f9137501cb7c")
 		(property "Reference" "BT1"
 			(at 25.4 45.1484 0)
@@ -5822,7 +5841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 21.59 46.736 90)
 			(effects
 				(font
@@ -6066,7 +6085,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 133.35 109.22 0)
+		(at 133.35 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6074,7 +6093,7 @@
 		(dnp no)
 		(uuid "5698f151-51cc-42d1-9b03-aa6c85f2b09a")
 		(property "Reference" "R22"
-			(at 135.382 107.442 0)
+			(at 135.382 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6083,7 +6102,7 @@
 			)
 		)
 		(property "Value" "5.1kΩ"
-			(at 135.382 109.982 0)
+			(at 135.382 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6092,7 +6111,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 133.35 109.22 0)
+			(at 133.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6101,7 +6120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 133.35 109.22 0)
+			(at 133.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6110,7 +6129,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 133.35 109.22 0)
+			(at 133.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6236,7 +6255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 140.97 114.3 0)
 			(effects
 				(font
@@ -6835,7 +6854,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 100.6348 41.91 0)
 			(effects
 				(font
@@ -7038,7 +7057,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 34.5948 102.87 0)
 			(effects
 				(font
@@ -7108,7 +7127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 236.22 134.62 0)
 			(effects
 				(font
@@ -8944,7 +8963,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 171.45 60.96 0)
 			(effects
 				(font
