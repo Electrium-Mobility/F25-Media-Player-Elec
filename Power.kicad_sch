@@ -3241,7 +3241,7 @@
 	)
 	(text "PMOS/diode for protection. HOW TO SPEC MOSFET?\nhttps://www.ti.com/lit/an/slva139/slva139.pdf?ts=1760534797851\nNote: For reverse polarity protection, pmos should be\nimplemented with drain to battery +"
 		(exclude_from_sim no)
-		(at 56.134 18.034 0)
+		(at 49.53 19.05 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -4794,7 +4794,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -5571,7 +5571,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 167.64 115.57 0)
 			(effects
 				(font
@@ -6924,7 +6924,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 46.99 66.04 0)
 			(effects
 				(font
