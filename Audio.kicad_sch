@@ -3338,7 +3338,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00e25b11-f68e-44d8-a2ad-a9d2f7c953ca")
-		(property "Reference" "C22"
+		(property "Reference" "dC22"
 			(at 53.086 81.026 0)
 			(effects
 				(font
@@ -3356,7 +3356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 52.07 78.74 0)
 			(effects
 				(font
@@ -3392,7 +3392,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C22")
+					(reference "dC22")
 					(unit 1)
 				)
 			)
@@ -4404,7 +4404,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a3cdd07-df06-47bc-a187-06b421d62948")
-		(property "Reference" "C21"
+		(property "Reference" "dC21"
 			(at 59.944 81.026 0)
 			(effects
 				(font
@@ -4422,7 +4422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 58.42 78.74 0)
 			(effects
 				(font
@@ -4458,7 +4458,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C21")
+					(reference "dC21")
 					(unit 1)
 				)
 			)
@@ -5142,7 +5142,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9865c87-bf8b-4c51-8ee1-064ebd6fdf76")
-		(property "Reference" "C28"
+		(property "Reference" "dC28"
 			(at 124.714 115.824 0)
 			(effects
 				(font
@@ -5160,7 +5160,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 121.92 116.84 0)
 			(effects
 				(font
@@ -5196,7 +5196,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C28")
+					(reference "dC28")
 					(unit 1)
 				)
 			)
@@ -5211,7 +5211,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9c16874-0683-495f-8cc9-bb4ec05998f6")
-		(property "Reference" "C23"
+		(property "Reference" "dC23"
 			(at 168.402 66.802 0)
 			(effects
 				(font
@@ -5229,7 +5229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 167.64 64.77 0)
 			(effects
 				(font
@@ -5265,7 +5265,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C23")
+					(reference "dC23")
 					(unit 1)
 				)
 			)
@@ -5298,7 +5298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 140.97 87.63 0)
 			(effects
 				(font
@@ -5349,7 +5349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de94ca68-928d-4c70-bc49-6bd2daa728f7")
-		(property "Reference" "C20"
+		(property "Reference" "dC20"
 			(at 66.802 80.772 0)
 			(effects
 				(font
@@ -5367,7 +5367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 66.04 78.74 0)
 			(effects
 				(font
@@ -5403,7 +5403,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C20")
+					(reference "dC20")
 					(unit 1)
 				)
 			)
@@ -5556,7 +5556,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee49b24d-cf35-47ee-ab0c-e1c4020f93bb")
-		(property "Reference" "C27"
+		(property "Reference" "dC27"
 			(at 183.642 66.802 0)
 			(effects
 				(font
@@ -5574,7 +5574,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 182.88 64.77 0)
 			(effects
 				(font
@@ -5610,7 +5610,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C27")
+					(reference "dC27")
 					(unit 1)
 				)
 			)
@@ -5756,7 +5756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9d21c5f-4b0b-4b9b-919e-b2c35759645b")
-		(property "Reference" "C26"
+		(property "Reference" "dC26"
 			(at 176.022 66.802 0)
 			(effects
 				(font
@@ -5774,7 +5774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 175.26 64.77 0)
 			(effects
 				(font
@@ -5810,7 +5810,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/31bc7b2c-ab8b-4c9e-a1df-dec3026ddee0"
-					(reference "C26")
+					(reference "dC26")
 					(unit 1)
 				)
 			)
