@@ -16335,6 +16335,148 @@
 			)
 		)
 	)
+	(sheet
+		(at 307.34 90.17)
+		(size 20.32 49.53)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 247 255 191 1.0000)
+		)
+		(uuid "f44db6d7-c45e-4150-a777-8c6c189bba1b")
+		(property "Sheetname" "AudioAlt"
+			(at 307.34 89.4584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AudioAlt.kicad_sch"
+			(at 307.34 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A2_SDIN" input
+			(at 307.34 93.98 180)
+			(uuid "38c41d9e-5db3-416f-86a5-db1dbe3209ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_MODE" input
+			(at 307.34 97.79 180)
+			(uuid "28213f66-0103-4230-aeb2-3978347b94ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_CSB_n" input
+			(at 307.34 101.6 180)
+			(uuid "c1503898-bbd8-4566-a2d9-0d05f7550aec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_SCLK" input
+			(at 307.34 105.41 180)
+			(uuid "caefeebe-1bf2-4b91-b78f-d48ec1e7d556")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWR_CTRL" input
+			(at 307.34 132.08 180)
+			(uuid "78557b4b-2962-40c9-848c-b724084081c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_MCLK" input
+			(at 307.34 116.84 180)
+			(uuid "9acdf9c5-2d06-4b79-abae-f0c4f0cef4eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_DACDAT" input
+			(at 307.34 120.65 180)
+			(uuid "28d15477-4142-4303-886d-490efd73fe45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_TSW" input
+			(at 307.34 135.89 180)
+			(uuid "b280131f-5620-4641-af26-74b5d9b9b72b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_BCLK" input
+			(at 307.34 113.03 180)
+			(uuid "b2dbc5d0-18cd-4a29-956b-5434b75e9724")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2_DACLRC" input
+			(at 307.34 124.46 180)
+			(uuid "5b530005-cf3a-43d4-8d2d-595540b31ec6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
