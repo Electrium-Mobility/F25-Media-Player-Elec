@@ -3328,6 +3328,12 @@
 		(uuid "83cfb404-b3ad-4358-89e6-d4a57c93b956")
 	)
 	(junction
+		(at 266.7 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "916a506c-5be6-42d0-a4cc-4c41197c4c9d")
+	)
+	(junction
 		(at 21.59 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3665,6 +3671,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 138.43) (xy 266.7 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40c3d72c-a049-4b13-857b-a87893a19c20")
+	)
+	(wire
+		(pts
 			(xy 123.19 105.41) (xy 128.27 105.41)
 		)
 		(stroke
@@ -3975,6 +3991,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 125.73) (xy 266.7 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a331368-6791-4e94-b02f-cc76a6464096")
+	)
+	(wire
+		(pts
 			(xy 149.86 26.67) (xy 149.86 33.02)
 		)
 		(stroke
@@ -4112,6 +4138,16 @@
 			(type default)
 		)
 		(uuid "bc7f2b96-7a2d-4957-91d5-9ed9a8ecb3d1")
+	)
+	(wire
+		(pts
+			(xy 266.7 116.84) (xy 266.7 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdff062c-4c5b-4ebd-80a7-743fb89ebf25")
 	)
 	(wire
 		(pts
@@ -4695,6 +4731,76 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/17b36465-6639-4c30-8d5f-ef2acae7afbe"
 					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 266.7 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a6b1086-a1b3-494f-88ed-e59644af4c75")
+		(property "Reference" "R12"
+			(at 269.24 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1kΩ"
+			(at 269.24 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f5b2fe0c-32fc-45f5-937e-a3092bf02516")
+		)
+		(pin "1"
+			(uuid "426e5359-b905-4722-9eea-2f7052833fa3")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/17b36465-6639-4c30-8d5f-ef2acae7afbe"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6223,6 +6329,72 @@
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/17b36465-6639-4c30-8d5f-ef2acae7afbe"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b847062-cf98-4f09-b2f3-80e295749124")
+		(property "Reference" "#PWR03"
+			(at 266.7 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9945a678-6ad0-4feb-a35e-860ce276438f")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/17b36465-6639-4c30-8d5f-ef2acae7afbe"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8604,6 +8776,85 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/17b36465-6639-4c30-8d5f-ef2acae7afbe"
 					(reference "dC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 266.7 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8fa6164-bccb-416a-9bc3-04bf9fb0d546")
+		(property "Reference" "D7"
+			(at 270.51 133.6674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 270.51 136.2074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 266.7 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 266.7 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 266.7 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9bc5d60e-0099-4332-b9a4-b34446693db2")
+		)
+		(pin "1"
+			(uuid "c1e0b25b-e0d3-4ce6-bf01-9b881e49c3b0")
+		)
+		(instances
+			(project ""
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/17b36465-6639-4c30-8d5f-ef2acae7afbe"
+					(reference "D7")
 					(unit 1)
 				)
 			)
