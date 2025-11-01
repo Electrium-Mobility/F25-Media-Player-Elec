@@ -4508,16 +4508,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Add mosfets on power rails to allow for\ncontrolling peripheral shutdown power saving"
-		(exclude_from_sim no)
-		(at 172.72 0.254 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "00808355-f6c1-4fea-b310-569353329be6")
-	)
 	(text "LCD and UART Connectors"
 		(exclude_from_sim no)
 		(at 245.11 18.288 0)
@@ -4540,26 +4530,25 @@
 		)
 		(uuid "06aa4955-52cc-4b20-8630-18d96511b8ea")
 	)
-	(text "Is PSRAM in the WROOM S3? What do they need?\nBring out the strapping pins and unused pins using test pad\nBring the pull up on SD lines into the SD rules area\nAdd zero resistors to the audio page + LCD + Power pages or connections coming out,\nadditionally to all pins you are unsure of\nThe PWR_ON_n signal is sus! When you turn of the device, is VSRC grounded?\nWouldn't that make it always on? Read the datasheet on this. Maybe you should pull up to bat?\nThis depends on what VBAT is when a USB is in but the battery is not there.\nBB_EN is impossible to control via ESP. ESP requires power but BB converter needs the signal. Circular argument.\nYou need a battery monitor or BMS to read the battery voltage! The ESP can't be the one to\ndetermine whether you battery is too low voltage and therefore shouldn't power on the system - there needs to be\nanother IC that uses very little power but monitors the battery at all times, even when the system is powered off.\nIn other words, your charging IC is too simple! (MIC826, voltage supervisor)\nMAYBE FOR NOW, YOU DON'T NEED IT BECAUSE WE JUST WANT TO MAKE SURE THE SYSTEM WORKS BEFORE WE OPTIMIZE IT\nIs your PMOS and zener diode reverse polarity circuitry actually useful? VBAT probably won't exceed 4.2 because\nof internal IC over voltage protection, your battery will never go over 4.2 otherwise your system is already exploded,\nyour battery also uses JST connection which is KEY'ed so you will not mechanically plug in the battery wrong.\nYour USB still doesn't protect against surge and overcurrent. Either you use a fuse, or find an IC that has a PTC, Zener, and fuse,\nor just build your own PTC + zener (polymer zener protection device)\nAlso, I need to have an integrated LED for powered on. Plus, probably should take a look more at the UART and JTAG debug pins."
-		(exclude_from_sim no)
-		(at 96.266 -31.242 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "07614424-6d31-4ce6-9c17-f85f70d24fff")
-	)
 	(text "Keep decoupling capacitors as close to SoC as possible\n"
 		(exclude_from_sim no)
-		(at 109.728 89.916 0)
+		(at 120.396 89.916 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "0db40105-b0df-4ef9-a9b5-fae029c9f866")
+	)
+	(text "50-69"
+		(exclude_from_sim no)
+		(at 20.066 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "148095e7-2fc7-4cf9-9ea9-a800676914a0")
 	)
 	(text "ESP32S3 WROOM-1"
 		(exclude_from_sim no)
@@ -4672,6 +4661,16 @@
 		)
 		(uuid "3f41824b-e0cb-4fd6-8ba2-4c1feed70d66")
 	)
+	(text "0-9"
+		(exclude_from_sim no)
+		(at 84.074 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "403922f9-8be5-4420-adfc-b5022624df99")
+	)
 	(text "I2C, SD/IO/MMC, and I2S can be mapped to any GPIO\n"
 		(exclude_from_sim no)
 		(at 205.486 87.63 0)
@@ -4723,6 +4722,16 @@
 		)
 		(uuid "6690a437-fa18-4dbb-8e63-d6d6dae6b73d")
 	)
+	(text "10-29"
+		(exclude_from_sim no)
+		(at 175.514 161.036 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "68d0797d-b33e-413c-bf3b-d594871596a8")
+	)
 	(text "Unsure if these TVS and zener are valid, or if their order is corret"
 		(exclude_from_sim no)
 		(at 55.88 160.02 0)
@@ -4756,16 +4765,6 @@
 		)
 		(uuid "7d138779-e49d-4edf-aab8-b63e6a8a9e6f")
 	)
-	(text "Find Diode Footprints, + Fuse\nConfirm all IC footprints validity\nDo Decaps need smaller footprints?"
-		(exclude_from_sim no)
-		(at 113.792 -3.556 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7fe229a7-b677-4ba7-9c44-e8f926500c41")
-	)
 	(text "polyfuse"
 		(exclude_from_sim no)
 		(at 97.536 110.998 0)
@@ -4775,6 +4774,16 @@
 			)
 		)
 		(uuid "8b2170fd-2d05-41c6-b170-b58035a3824a")
+	)
+	(text "40-49"
+		(exclude_from_sim no)
+		(at 229.108 86.614 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8b918312-7b79-4b0c-9f8c-c2a3431da041")
 	)
 	(text "Audio Jack"
 		(exclude_from_sim no)
@@ -4787,6 +4796,16 @@
 			)
 		)
 		(uuid "8c7c5cd8-9954-450e-8a29-f99cbe007bcd")
+	)
+	(text "30-39"
+		(exclude_from_sim no)
+		(at 20.828 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "92308b5c-4675-42ee-b962-f4f75812851f")
 	)
 	(text "Do you need both an USB OTG and UART port?\nhttps://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/usb-otg-console.html"
 		(exclude_from_sim no)
@@ -4943,6 +4962,16 @@
 			)
 		)
 		(uuid "dba021f3-8023-41be-8d71-e467ff214c79")
+	)
+	(text "0-9"
+		(exclude_from_sim no)
+		(at 19.558 161.036 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "effa3174-36a4-403f-b539-2494eb63b748")
 	)
 	(text "https://youtu.be/tC-DLeI6hjQ?si=EssO1yo0NIMRUUac"
 		(exclude_from_sim no)
@@ -6305,7 +6334,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 109.22) (xy 73.66 109.22)
+			(xy 46.99 109.22) (xy 57.15 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7065,7 +7094,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 109.22) (xy 85.09 109.22)
+			(xy 64.77 109.22) (xy 85.09 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8728,7 +8757,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0baabe78-5f07-4416-aa69-0a7fafaa27db")
-		(property "Reference" "dC13"
+		(property "Reference" "C1"
 			(at 86.868 49.784 0)
 			(effects
 				(font
@@ -8782,7 +8811,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "dC13")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -8797,7 +8826,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c1372e9-f883-40a9-9ccd-ea5461ca2b71")
-		(property "Reference" "R25"
+		(property "Reference" "R17"
 			(at 231.648 129.794 90)
 			(effects
 				(font
@@ -8849,7 +8878,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R25")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -9060,7 +9089,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1aca4122-2f1a-4686-941c-86ae598e0847")
-		(property "Reference" "R58"
+		(property "Reference" "R23"
 			(at 229.108 108.204 90)
 			(effects
 				(font
@@ -9112,7 +9141,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R58")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -9393,7 +9422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "216594e9-aedc-4446-9457-277e6524d496")
-		(property "Reference" "R27"
+		(property "Reference" "R19"
 			(at 231.648 139.954 90)
 			(effects
 				(font
@@ -9445,7 +9474,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R27")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -9460,7 +9489,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27b37506-9517-4e6a-add1-bf2650b5eb6d")
-		(property "Reference" "R78"
+		(property "Reference" "R89"
 			(at 132.588 124.714 90)
 			(effects
 				(font
@@ -9512,7 +9541,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R78")
+					(reference "R89")
 					(unit 1)
 				)
 			)
@@ -9592,7 +9621,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c5732de-93c3-4251-ba0b-a4f68cbeca1d")
-		(property "Reference" "dC10"
+		(property "Reference" "C10"
 			(at 177.546 127 0)
 			(effects
 				(font
@@ -9646,7 +9675,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "dC10")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -9661,7 +9690,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2db87eaf-378b-4973-8672-54b445f6d583")
-		(property "Reference" "J2"
+		(property "Reference" "J10"
 			(at 214.376 116.332 0)
 			(effects
 				(font
@@ -9735,7 +9764,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "J2")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -10006,7 +10035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30a79d07-6511-4b2a-9c48-6abb35b54741")
-		(property "Reference" "C33"
+		(property "Reference" "C36"
 			(at 168.656 186.182 0)
 			(effects
 				(font
@@ -10060,7 +10089,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C33")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -10075,7 +10104,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "34a1f319-5f7b-4daa-9d9b-ab365724c940")
-		(property "Reference" "Q2"
+		(property "Reference" "Q10"
 			(at 208.28 104.14 0)
 			(effects
 				(font
@@ -10157,7 +10186,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "Q2")
+					(reference "Q10")
 					(unit 1)
 				)
 			)
@@ -10172,7 +10201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36c097a4-17d4-417b-b58d-dcc4a437ac11")
-		(property "Reference" "SW5"
+		(property "Reference" "SW34"
 			(at 110.49 182.626 90)
 			(effects
 				(font
@@ -10225,7 +10254,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW5")
+					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -10439,7 +10468,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46589c39-eaf8-43d3-ab69-e54870d1689b")
-		(property "Reference" "SW1"
+		(property "Reference" "SW30"
 			(at 21.844 180.594 90)
 			(effects
 				(font
@@ -10491,7 +10520,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW1")
+					(reference "SW30")
 					(unit 1)
 				)
 			)
@@ -10506,7 +10535,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "498da319-fc25-418b-a868-8537360f6938")
-		(property "Reference" "R6"
+		(property "Reference" "R12"
 			(at 277.114 106.172 0)
 			(effects
 				(font
@@ -10558,7 +10587,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R6")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -10639,7 +10668,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b6717e0-a4f7-497e-9782-1d216cda80c9")
-		(property "Reference" "R81"
+		(property "Reference" "R86"
 			(at 132.588 106.934 90)
 			(effects
 				(font
@@ -10691,7 +10720,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R81")
+					(reference "R86")
 					(unit 1)
 				)
 			)
@@ -10902,7 +10931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5845daa1-b27a-4ff1-8da6-419af6a329bb")
-		(property "Reference" "R79"
+		(property "Reference" "R90"
 			(at 132.588 128.524 90)
 			(effects
 				(font
@@ -10954,7 +10983,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R79")
+					(reference "R90")
 					(unit 1)
 				)
 			)
@@ -11035,7 +11064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "64ded282-8bc5-4493-856f-0cc2f49cd5f4")
-		(property "Reference" "R85"
+		(property "Reference" "R94"
 			(at 132.588 153.416 90)
 			(effects
 				(font
@@ -11087,7 +11116,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R85")
+					(reference "R94")
 					(unit 1)
 				)
 			)
@@ -11168,7 +11197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69bf0742-2037-42d9-82ac-9ea0776b2691")
-		(property "Reference" "R53"
+		(property "Reference" "R22"
 			(at 229.108 103.124 90)
 			(effects
 				(font
@@ -11220,7 +11249,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R53")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -11235,7 +11264,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c4853c5-af13-44ff-b3c6-c300c569d42a")
-		(property "Reference" "R5"
+		(property "Reference" "R11"
 			(at 266.954 106.172 0)
 			(effects
 				(font
@@ -11287,7 +11316,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R5")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -11368,7 +11397,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ee5478f-06b0-4e61-abff-36103f7e727b")
-		(property "Reference" "R80"
+		(property "Reference" "R91"
 			(at 132.588 132.334 90)
 			(effects
 				(font
@@ -11420,7 +11449,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R80")
+					(reference "R91")
 					(unit 1)
 				)
 			)
@@ -11566,7 +11595,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75d57aa3-db48-43da-81f4-b49f10fbc251")
-		(property "Reference" "R24"
+		(property "Reference" "R16"
 			(at 231.648 124.714 90)
 			(effects
 				(font
@@ -11618,7 +11647,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R24")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -11633,7 +11662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79ce9710-b6c8-4ec0-8b19-5c56b636a530")
-		(property "Reference" "D5"
+		(property "Reference" "D4"
 			(at 91.44 135.128 0)
 			(effects
 				(font
@@ -11687,7 +11716,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "D5")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -11703,7 +11732,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7bfd612c-ef67-4a30-957d-4350ef34c0f9")
-		(property "Reference" "R84"
+		(property "Reference" "R93"
 			(at 132.588 148.336 90)
 			(effects
 				(font
@@ -11755,7 +11784,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R84")
+					(reference "R93")
 					(unit 1)
 				)
 			)
@@ -11835,7 +11864,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d4000f2-8e1b-46aa-9e5a-9aa01000d05d")
-		(property "Reference" "C12"
+		(property "Reference" "C30"
 			(at 31.496 186.182 0)
 			(effects
 				(font
@@ -11889,7 +11918,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C12")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -12170,7 +12199,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "862f9ecc-4e5c-4009-8b14-fb9c4ee91043")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 199.644 29.972 0)
 			(effects
 				(font
@@ -12222,7 +12251,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -12237,7 +12266,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b23b23c-ffaa-4133-8c6c-474eb229190c")
-		(property "Reference" "C15"
+		(property "Reference" "C32"
 			(at 79.756 186.182 0)
 			(effects
 				(font
@@ -12291,7 +12320,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C15")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -12373,7 +12402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "910a2903-b126-413b-bcca-1879d2c91a4b")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 31.75 101.6 0)
 			(effects
 				(font
@@ -12476,7 +12505,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -12623,7 +12652,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96e6f1d0-8525-4702-916a-b399120132d7")
-		(property "Reference" "R9"
+		(property "Reference" "R15"
 			(at 277.114 137.922 0)
 			(effects
 				(font
@@ -12675,7 +12704,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R9")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -12690,7 +12719,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9cc0f3ae-087a-448f-bd15-c71aff078de8")
-		(property "Reference" "R54"
+		(property "Reference" "R48"
 			(at 259.588 32.004 90)
 			(effects
 				(font
@@ -12742,7 +12771,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R54")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -12827,7 +12856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dd6f737-04ab-4500-b5e6-cf9b148d7609")
-		(property "Reference" "J4"
+		(property "Reference" "J41"
 			(at 274.32 71.1199 0)
 			(effects
 				(font
@@ -12884,7 +12913,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "J4")
+					(reference "J41")
 					(unit 1)
 				)
 			)
@@ -12899,7 +12928,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e1ef280-f814-43a6-aac7-ddbfe209d9d6")
-		(property "Reference" "R18"
+		(property "Reference" "R0"
 			(at 91.186 144.78 0)
 			(effects
 				(font
@@ -12953,7 +12982,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R18")
+					(reference "R0")
 					(unit 1)
 				)
 			)
@@ -12968,7 +12997,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e5a1665-8a7e-40e8-81ed-f04864e25b13")
-		(property "Reference" "R56"
+		(property "Reference" "R20"
 			(at 193.548 128.524 90)
 			(effects
 				(font
@@ -13020,7 +13049,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R56")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -13035,7 +13064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9fc47166-b7c0-4e39-b61a-7841e96fe245")
-		(property "Reference" "Q3"
+		(property "Reference" "Q40"
 			(at 242.57 33.02 0)
 			(effects
 				(font
@@ -13117,7 +13146,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "Q3")
+					(reference "Q40")
 					(unit 1)
 				)
 			)
@@ -13198,7 +13227,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a54781af-15a2-4324-ba17-622198fb122c")
-		(property "Reference" "R82"
+		(property "Reference" "R87"
 			(at 132.588 110.744 90)
 			(effects
 				(font
@@ -13250,7 +13279,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R82")
+					(reference "R87")
 					(unit 1)
 				)
 			)
@@ -13265,7 +13294,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5cc3101-0c9d-4c50-ae86-3fc851ffcd54")
-		(property "Reference" "C1"
+		(property "Reference" "C0"
 			(at 108.966 132.842 0)
 			(effects
 				(font
@@ -13319,7 +13348,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C1")
+					(reference "C0")
 					(unit 1)
 				)
 			)
@@ -13399,7 +13428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8fa52d4-14b9-4f43-b61d-32a95b6df4fa")
-		(property "Reference" "C18"
+		(property "Reference" "C35"
 			(at 140.716 186.182 0)
 			(effects
 				(font
@@ -13453,7 +13482,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C18")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -13600,7 +13629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab092d50-1036-4466-97df-8fef7e7db624")
-		(property "Reference" "R8"
+		(property "Reference" "R14"
 			(at 266.954 137.922 0)
 			(effects
 				(font
@@ -13652,7 +13681,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R8")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -13667,7 +13696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b6040c9a-6ccc-4a24-a1e0-9861ff63c814")
-		(property "Reference" "C14"
+		(property "Reference" "C31"
 			(at 51.816 186.182 0)
 			(effects
 				(font
@@ -13721,7 +13750,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C14")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -13803,7 +13832,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b81e7167-4940-4d67-a861-3f07be257d29")
-		(property "Reference" "F1"
+		(property "Reference" "F0"
 			(at 91.44 102.87 90)
 			(effects
 				(font
@@ -13856,7 +13885,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "F1")
+					(reference "F0")
 					(unit 1)
 				)
 			)
@@ -13871,7 +13900,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b88f563f-57c4-4aeb-a466-3f7fea6d0af7")
-		(property "Reference" "R26"
+		(property "Reference" "R18"
 			(at 231.648 134.874 90)
 			(effects
 				(font
@@ -13923,7 +13952,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R26")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -14069,7 +14098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc146398-f7af-40b8-a376-11e5d4aa1777")
-		(property "Reference" "J1"
+		(property "Reference" "J40"
 			(at 274.828 34.29 0)
 			(effects
 				(font
@@ -14141,7 +14170,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "J1")
+					(reference "J40")
 					(unit 1)
 				)
 			)
@@ -14156,7 +14185,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf3fb477-f2a6-43f4-b3db-405e5d91206e")
-		(property "Reference" "dC11"
+		(property "Reference" "C40"
 			(at 230.886 44.45 0)
 			(effects
 				(font
@@ -14210,7 +14239,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "dC11")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -14225,7 +14254,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1bbc594-d4a3-4471-a88f-fb2c51252135")
-		(property "Reference" "R57"
+		(property "Reference" "R21"
 			(at 193.548 139.954 90)
 			(effects
 				(font
@@ -14277,7 +14306,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R57")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -14358,7 +14387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c75e8f5f-3083-46a4-abfc-2767ade6ebc9")
-		(property "Reference" "R83"
+		(property "Reference" "R92"
 			(at 132.588 142.494 90)
 			(effects
 				(font
@@ -14410,7 +14439,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R83")
+					(reference "R92")
 					(unit 1)
 				)
 			)
@@ -14425,7 +14454,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c82cb6f9-d67e-48f2-8546-f9fcae8f7849")
-		(property "Reference" "C19"
+		(property "Reference" "C3"
 			(at 199.39 39.878 0)
 			(effects
 				(font
@@ -14479,7 +14508,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C19")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -14887,15 +14916,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 77.47 109.22 180)
+		(at 60.96 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "dae780ee-342c-49b2-856b-86818ea92c25")
-		(property "Reference" "D6"
-			(at 75.692 104.14 0)
+		(property "Reference" "D0"
+			(at 59.182 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14904,7 +14933,7 @@
 			)
 		)
 		(property "Value" "1N5819HW-7-F"
-			(at 70.104 106.68 0)
+			(at 53.594 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14913,7 +14942,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 77.47 109.22 0)
+			(at 60.96 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14922,7 +14951,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 109.22 0)
+			(at 60.96 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14931,7 +14960,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 77.47 109.22 0)
+			(at 60.96 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14940,7 +14969,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 77.47 109.22 0)
+			(at 60.96 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14949,7 +14978,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 77.47 109.22 0)
+			(at 60.96 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14966,7 +14995,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "D6")
+					(reference "D0")
 					(unit 1)
 				)
 			)
@@ -14981,7 +15010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dafa8ae2-a200-4bb2-bd61-de55740bf936")
-		(property "Reference" "SW2"
+		(property "Reference" "SW31"
 			(at 41.656 180.086 90)
 			(effects
 				(font
@@ -15033,7 +15062,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW2")
+					(reference "SW31")
 					(unit 1)
 				)
 			)
@@ -15048,7 +15077,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db2a93d2-dbe8-46a8-a991-64b2f9e74ab3")
-		(property "Reference" "R59"
+		(property "Reference" "R47"
 			(at 259.588 26.924 90)
 			(effects
 				(font
@@ -15100,7 +15129,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R59")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -15115,7 +15144,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df519e29-1558-4f29-82de-5fba54edd1a0")
-		(property "Reference" "SW3"
+		(property "Reference" "SW32"
 			(at 69.85 182.626 90)
 			(effects
 				(font
@@ -15168,7 +15197,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW3")
+					(reference "SW32")
 					(unit 1)
 				)
 			)
@@ -15183,7 +15212,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e92d6b36-77e2-4c51-b133-2621a457b9f8")
-		(property "Reference" "dC1"
+		(property "Reference" "C2"
 			(at 93.472 49.276 0)
 			(effects
 				(font
@@ -15237,7 +15266,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "dC1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -15317,7 +15346,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efb1ef10-8c8d-42b3-9452-183cd169abd4")
-		(property "Reference" "SW4"
+		(property "Reference" "SW33"
 			(at 90.17 182.626 90)
 			(effects
 				(font
@@ -15370,7 +15399,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW4")
+					(reference "SW33")
 					(unit 1)
 				)
 			)
@@ -15385,7 +15414,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f07f3483-ae75-45ff-8b70-d82c1c6d3819")
-		(property "Reference" "SW6"
+		(property "Reference" "SW35"
 			(at 130.81 182.626 90)
 			(effects
 				(font
@@ -15438,7 +15467,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW6")
+					(reference "SW35")
 					(unit 1)
 				)
 			)
@@ -15588,7 +15617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f742a845-731e-4393-bbf0-a73a09e453c8")
-		(property "Reference" "R7"
+		(property "Reference" "R13"
 			(at 256.794 137.922 0)
 			(effects
 				(font
@@ -15640,7 +15669,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R7")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -15655,7 +15684,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7a24cfc-7433-42a8-8770-ec0ca4b603c9")
-		(property "Reference" "R77"
+		(property "Reference" "R88"
 			(at 132.588 120.904 90)
 			(effects
 				(font
@@ -15707,7 +15736,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "R77")
+					(reference "R88")
 					(unit 1)
 				)
 			)
@@ -15722,7 +15751,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f82007bf-11bc-48e6-a229-dbb83c13e600")
-		(property "Reference" "C16"
+		(property "Reference" "C33"
 			(at 100.076 186.182 0)
 			(effects
 				(font
@@ -15776,7 +15805,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C16")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -15791,7 +15820,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa1b0acc-d68f-4aef-a184-ba053874e340")
-		(property "Reference" "SW7"
+		(property "Reference" "SW36"
 			(at 156.21 183.896 90)
 			(effects
 				(font
@@ -15846,7 +15875,7 @@
 		(instances
 			(project ""
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "SW7")
+					(reference "SW36")
 					(unit 1)
 				)
 			)
@@ -15861,7 +15890,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa6ffd18-7742-45cd-9762-8acbb3be3fba")
-		(property "Reference" "C17"
+		(property "Reference" "C34"
 			(at 120.396 186.182 0)
 			(effects
 				(font
@@ -15915,7 +15944,7 @@
 		(instances
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866"
-					(reference "C17")
+					(reference "C34")
 					(unit 1)
 				)
 			)
