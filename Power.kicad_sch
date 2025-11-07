@@ -3791,16 +3791,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 31.75) (xy 41.91 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65afdf22-f759-4dfb-9454-cff7507a69cd")
-	)
-	(wire
-		(pts
 			(xy 88.9 62.23) (xy 88.9 49.53)
 		)
 		(stroke
@@ -4299,6 +4289,16 @@
 		)
 		(uuid "f3d5c70f-1452-4e37-9f26-a617a97aeb56")
 	)
+	(wire
+		(pts
+			(xy 34.29 31.75) (xy 41.91 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe4071ac-2e7e-45a4-95a8-7460182bfc61")
+	)
 	(label "STAT"
 		(at 171.45 44.45 180)
 		(effects
@@ -4329,6 +4329,16 @@
 		)
 		(uuid "a7fa87ee-79c3-4209-aafd-71537f81f9cf")
 	)
+	(label "BAT+"
+		(at 21.59 43.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5d597e3-e9ec-4362-9d85-de5df89659ab")
+	)
 	(label "LX2"
 		(at 212.09 105.41 90)
 		(effects
@@ -4348,6 +4358,16 @@
 			(justify left bottom)
 		)
 		(uuid "e214aa87-5bd3-4790-95f4-e9c144037244")
+	)
+	(label "PMOS_D"
+		(at 34.29 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbe97511-5dfd-4234-bf33-57b8408bbcce")
 	)
 	(hierarchical_label "CHRG_STAT"
 		(shape input)
@@ -4959,7 +4979,7 @@
 		(dnp no)
 		(uuid "1483d10e-a9b7-4a91-82be-a3950b0fab41")
 		(property "Reference" "Q50"
-			(at 46.99 25.4 90)
+			(at 48.768 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4967,7 +4987,7 @@
 			)
 		)
 		(property "Value" "DMP3068L-7"
-			(at 46.99 27.94 90)
+			(at 48.768 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)

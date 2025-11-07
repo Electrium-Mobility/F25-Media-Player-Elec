@@ -1,4 +1,4 @@
-26725942545293562
+26729467349612409
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -61620,6 +61620,13 @@ USB_C_12402012E212A_AMP
 0
 12
 12
+Footprints
+logo
+
+
+0
+0
+0
 Fuse
 FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165
 Littelfuse fuse holder for ATO/FKS blade fuses, 80V, vertical, 20 x 6mm, PCB thickness up to 1.5mm, http://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/ato/littelfuse-fuse-holder-ato-flr-pcb-datasheet.pdf
@@ -106371,6 +106378,13 @@ Varistor VF
 0
 2
 2
+footprints
+12402012E212A_AMP
+
+12402012E212A 
+0
+12
+12
 footprints
 DSG0008A
 

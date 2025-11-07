@@ -8082,6 +8082,16 @@
 		)
 		(uuid "7d16c703-4ea4-4edc-ad6e-8f7e02757385")
 	)
+	(label "USB_PWR2"
+		(at 69.85 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f0227da-f96e-42c4-9ce6-2a2b1cb930b6")
+	)
 	(label "PB0"
 		(at 177.8 57.15 180)
 		(effects
@@ -8281,6 +8291,16 @@
 			(justify left bottom)
 		)
 		(uuid "b7a409d0-57d8-4782-aa8e-e2f5250be731")
+	)
+	(label "USB_PWR"
+		(at 48.26 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bdcdc6fa-503e-4b47-a94d-d449744f9f63")
 	)
 	(label "TXD0"
 		(at 254 69.85 0)
