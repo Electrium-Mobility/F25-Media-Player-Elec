@@ -1,4 +1,4 @@
-26729467349910449
+26732993237717615
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106400,9 +106400,23 @@ TPS62172DSGR
 9
 9
 footprints
+TestPoint_Pad_1.5x1.5mm
+SMD rectangular pad as test Point, square 1.5mm side length
+test point SMD pad rectangle square
+0
+1
+1
+footprints
 USBC_12402012E212A_AMP
 
 12402012E212A 
 0
 12
 12
+footprints
+Untitled
+
+
+0
+0
+0
