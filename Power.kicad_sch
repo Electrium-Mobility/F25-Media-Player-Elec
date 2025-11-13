@@ -4930,7 +4930,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "footprints:TestPoint_Pad_1.5x1.5mm"
 			(at 55.88 31.75 0)
 			(effects
 				(font
@@ -5707,7 +5707,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "footprints:TestPoint_Pad_1.5x1.5mm"
 			(at 167.64 115.57 0)
 			(effects
 				(font
@@ -6177,7 +6177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 176.53 123.19 0)
 			(effects
 				(font
@@ -7126,7 +7126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
 			(at 46.99 66.04 0)
 			(effects
 				(font
@@ -8839,7 +8839,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 252.73 123.19 0)
 			(effects
 				(font
