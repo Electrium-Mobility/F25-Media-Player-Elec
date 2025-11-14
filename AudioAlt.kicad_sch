@@ -2055,12 +2055,6 @@
 		(uuid "382af52d-ff87-4db7-b6aa-c4e57031a8b0")
 	)
 	(junction
-		(at 185.42 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "55c9b502-c5b8-4aa4-99c8-f771d2dfe365")
-	)
-	(junction
 		(at 132.08 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2486,16 +2480,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 118.11) (xy 171.45 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "379e5a3d-1b44-42c0-abc6-628f14b85e20")
-	)
-	(wire
-		(pts
 			(xy 116.84 105.41) (xy 124.46 105.41)
 		)
 		(stroke
@@ -2623,16 +2607,6 @@
 			(type default)
 		)
 		(uuid "51835512-dd82-4857-81e3-0bc9c8083929")
-	)
-	(wire
-		(pts
-			(xy 182.88 118.11) (xy 185.42 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55f0d4e2-a695-419c-a427-3161a984f2ed")
 	)
 	(wire
 		(pts
@@ -2906,6 +2880,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 85.09) (xy 242.57 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d9a77d3-3a89-409c-84ac-7711afc3fb9f")
+	)
+	(wire
+		(pts
 			(xy 148.59 71.12) (xy 148.59 63.5)
 		)
 		(stroke
@@ -3026,6 +3010,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 85.09) (xy 234.95 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3e61a03-06f0-4d1b-a910-1a333d32da51")
+	)
+	(wire
+		(pts
 			(xy 90.17 55.88) (xy 90.17 48.26)
 		)
 		(stroke
@@ -3106,7 +3100,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 118.11) (xy 185.42 123.19)
+			(xy 185.42 113.03) (xy 185.42 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3336,16 +3330,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 113.03) (xy 185.42 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3d24e9c-28de-4306-be09-425eb1f08472")
-	)
-	(wire
-		(pts
 			(xy 124.46 105.41) (xy 132.08 105.41)
 		)
 		(stroke
@@ -3493,6 +3477,16 @@
 			(justify left bottom)
 		)
 		(uuid "8fdc6bed-5af2-4716-8890-0a2becd74b65")
+	)
+	(label "AVDD"
+		(at 229.87 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ac0f0267-fdbe-41e4-b25e-d2ea9264309f")
 	)
 	(label "HPVDD"
 		(at 158.75 63.5 270)
@@ -5100,75 +5094,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 180.34 118.11 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6c24aabf-85f4-42b7-9254-6e27e4ef173b")
-		(property "Reference" "R81"
-			(at 186.436 117.856 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47kΩ"
-			(at 191.77 117.856 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 180.34 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 180.34 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8c956d2c-3fa1-439c-935f-0acdb9de648f")
-		)
-		(pin "1"
-			(uuid "b2b7ebbb-0f94-442e-af2d-6367eb4c769e")
-		)
-		(instances
-			(project "Media Player"
-				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/f44db6d7-c45e-4150-a777-8c6c189bba1b"
-					(reference "R81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
 		(at 250.19 85.09 90)
 		(mirror x)
 		(unit 1)
@@ -5178,21 +5103,21 @@
 		(dnp no)
 		(uuid "6db7abc4-8f43-42e5-b5b5-f5c0c2a29a72")
 		(property "Reference" "R85"
-			(at 249.428 78.994 0)
+			(at 248.031 80.391 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 251.206 77.47 0)
+			(at 248.158 82.042 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
@@ -5232,6 +5157,76 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/f44db6d7-c45e-4150-a777-8c6c189bba1b"
 					(reference "R85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 237.49 85.09 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f37c191-e2c3-45fe-84bd-5dde0d54324f")
+		(property "Reference" "R95"
+			(at 235.966 80.772 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 235.966 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 237.49 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 237.49 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "365f2288-ce0d-47ed-b26e-f18e69494653")
+		)
+		(pin "1"
+			(uuid "8536f15a-3522-41d0-8562-2293b3f87317")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/f44db6d7-c45e-4150-a777-8c6c189bba1b"
+					(reference "R95")
 					(unit 1)
 				)
 			)
@@ -5870,6 +5865,72 @@
 			(project "Media Player"
 				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/f44db6d7-c45e-4150-a777-8c6c189bba1b"
 					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 171.45 118.11 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f55a322-d380-463e-957e-bf3ac63d168e")
+		(property "Reference" "TP74"
+			(at 176.53 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BIAS"
+			(at 176.53 118.872 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprints:TestPoint_Pad_1.5x1.5mm"
+			(at 171.45 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 171.45 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ec1fa20-61b1-4317-8ed6-9d8a8f39d0e9")
+		)
+		(instances
+			(project "Media Player"
+				(path "/5c19345b-3707-4c90-b593-78a9c3e56866/f44db6d7-c45e-4150-a777-8c6c189bba1b"
+					(reference "TP74")
 					(unit 1)
 				)
 			)

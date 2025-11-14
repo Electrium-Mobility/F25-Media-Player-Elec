@@ -11885,7 +11885,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 48.26 142.24 0)
 			(effects
 				(font
@@ -11894,7 +11894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C383211.pdf"
 			(at 53.34 142.24 0)
 			(effects
 				(font
@@ -12738,7 +12738,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 80.01 139.7 0)
 			(effects
 				(font
@@ -12747,7 +12747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C383211.pdf"
 			(at 85.09 139.7 0)
 			(effects
 				(font
@@ -14674,7 +14674,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 54.61 142.24 0)
 			(effects
 				(font
@@ -14683,7 +14683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C383211.pdf"
 			(at 59.69 142.24 0)
 			(effects
 				(font

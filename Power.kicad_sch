@@ -5419,7 +5419,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 187.96 44.45 0)
 			(effects
 				(font
@@ -5488,7 +5488,7 @@
 				)
 			)
 		)
-		(property "Value" "1uH"
+		(property "Value" "DFE252012P-1R0M=P2"
 			(at 208.28 96.52 90)
 			(effects
 				(font
@@ -5496,7 +5496,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 208.28 100.33 0)
 			(effects
 				(font
