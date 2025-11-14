@@ -4542,7 +4542,7 @@
 			(roundrect_rratio 0.15)
 			(net 1 "GND")
 			(pintype "passive")
-			(uuid "cb71d118-5207-46b3-9d1a-927d19ceecd2")
+			(uuid "e1699847-7daf-41db-a46c-13f60840cca1")
 		)
 		(pad "T" smd roundrect
 			(at 9.15 -0.72625 90)
@@ -35114,20 +35114,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Double check that your that your parts are IN STOCK"
-		(at 206 63.1 0)
-		(layer "User.1")
-		(uuid "904c0878-b843-4fcf-ac8e-7ce7a77c1f78")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "Find a way to implement card detect pin 9\nConfirm Audio connections --> mainly i2c and microphone VMID stuff\nMaybe for future update, you might want someway to detect battery voltage\nanalog, and instead of a comparator as either 0/1."
-		(at 212.6 81.7 0)
+	(gr_text "Confirm Audio connections --> mainly i2c and microphone VMID stuff\nCheck Silkscreen thickeness\nLook for floating connections/unnecessary curves on traces\nMake sure audio jack switch is pulled correctly\nASK GPT FOR MORE THINGS TO DOUBLE CHECK\npls pls pls double check mounting hole positioning\nConfirm all IC's are using the right footprints\nSpend time reading over all datasheets again :sob:"
+		(at 205 79.8 0)
 		(layer "User.1")
 		(uuid "e817c376-d545-4332-b8a4-a8f1973059eb")
 		(effects

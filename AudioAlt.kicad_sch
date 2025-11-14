@@ -3825,7 +3825,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PJ-327C-4A"
+		(property "Value" "PJ-327A"
 			(at 256.54 98.4249 0)
 			(effects
 				(font
@@ -3843,7 +3843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C145813.html?s_z=n_SJ-2524-SMT-TR"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49284723.pdf"
 			(at 248.92 100.33 0)
 			(effects
 				(font
